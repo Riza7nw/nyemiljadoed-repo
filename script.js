@@ -10,12 +10,17 @@
   let wishlist = JSON.parse(localStorage.getItem('nyemiljadoel_wishlist') || '[]');
 
   const products = [
-    { id: 2, name: 'Dadar Gulung', price: 3500, category: 'snack', img: 'dadargulung2.jpg' },
-    { id: 3, name: 'Sosis Solo', price: 4000, category: 'snack', img: 'sosissolo.jpg' },
-    { id: 4, name: 'Kue Putu', price: 8000, category: 'kue', img: 'kueputu.jpg' },
-    { id: 5, name: 'Badeg', price: 6000, category: 'minuman', img: 'badeg.png' },
-    { id: 6, name: 'Klepon', price: 5000, category: 'snack', img: 'klepon2.jpg' }
-  ];
+  { id: 2, name: 'Dadar Gulung', price: 3500, category: 'snack', img: 'dadargulung2.jpg' },
+  { id: 3, name: 'Sosis Solo', price: 4000, category: 'snack', img: 'sosissolo.jpg' },
+  { id: 4, name: 'Kue Putu', price: 8000, category: 'kue', img: 'kueputu.jpg' },
+  { id: 5, name: 'Badeg', price: 6000, category: 'minuman', img: 'badeg.png' },
+  { id: 6, name: 'Klepon', price: 5000, category: 'snack', img: 'klepon2.jpg' },
+
+  // produk baru
+  { id: 7, name: 'Onde-onde', price: 5000, category: 'kue', img: 'ondeonde.jpg' },
+  { id: 8, name: 'Lemper Ayam', price: 5000, category: 'snack', img: 'lemper.jpg' },
+  { id: 9, name: 'Es Cendol', price: 7000, category: 'minuman', img: 'cendol.jpg' }
+];
 
   // Bersihkan data lama (kalau sebelumnya ada produk permen id=1)
   cart = cart.filter(item => item.id !== 1);
