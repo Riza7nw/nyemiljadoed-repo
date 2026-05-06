@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nyemil Jadoel - Jajanan tradisional Indonesia era 90an. Permen karet Yosan, coklat payung, gulali, kue cubit & snack nostalgia lainnya. Rasa lama, kenangan tak pernah usang.">
+  <meta name="keywords" content="jajanan jadul, snack nostalgia, jajanan 90an, jajanan tradisional Indonesia, permen jadul, kue cubit, coklat payung">
+  <meta name="author" content="Nyemil Jadoel">
+  <meta property="og:title" content="Nyemil Jadoel - Jajanan Legendaris Indonesia">
+  <meta property="og:description" content="Rasa lama, kenangan tak pernah usang. Jajanan legendaris Indonesia yang bikin kamu balik ke masa kecil.">
+  <title>Nyemil Jadoel | Jajanan Legendaris Indonesia - Snack Nostalgia 90an</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Pop-up Diskon First Visit -->
+  <aside id="popup-diskon" class="popup-overlay" aria-hidden="true">
+    <div class="popup-card">
+      <button type="button" class="popup-close" aria-label="Tutup popup">&times;</button>
+      <div class="popup-content">
+        <span class="popup-badge">🔥 WELCOME!</span>
+        <h3>Diskon 20% untuk Pembelian Pertama!</h3>
+        <p>Gunakan kode: <strong>JADOEL20</strong></p>
+        <p class="popup-small">Promo berakhir dalam 24 jam</p>
+        <button type="button" class="btn btn-cta popup-cta">Klaim Sekarang</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Header & Nav -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#hero" class="logo">
+        <img src="Untitled (Animated Logo).png" alt="Logo Nyemil Jadoel" class="logo-image">
+        <span class="logo-text">Nyemil Jadoel</span>
+      </a>
+      <nav class="nav" id="main-nav">
+        <ul class="nav-list">
+          <li><a href="#hero">Beranda</a></li>
+          <li><a href="#produk">Produk</a></li>
+          <li><a href="#kenangan">Kenangan</a></li>
+          <li><a href="#promo">Promo</a></li>
+          <li><a href="#testimoni">Testimoni</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button type="button" class="icon-btn" id="theme-toggle" aria-label="Toggle dark/light mode">
+          <span class="icon-sun">☀️</span>
+          <span class="icon-moon">🌙</span>
+        </button>
+        <button type="button" class="icon-btn cart-btn" id="cart-toggle" aria-label="Keranjang">
+          <span>🛒</span>
+          <span class="cart-count" id="cart-badge">0</span>
+        </button>
+        <button type="button" class="icon-btn wishlist-btn" id="wishlist-toggle" aria-label="Wishlist">
+          <span>❤️</span>
+          <span class="wishlist-count" id="wishlist-badge">0</span>
+        </button>
+        <button type="button" class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="hero-bg"></div>
+      <div class="container hero-content">
+        <h1 class="hero-title animate-fade-in">Rasa Lama, Kenangan Tak Pernah Usang <span class="hero-emoji">🍪</span></h1>
+        <p class="hero-subtitle animate-fade-in delay-1">Jajanan legendaris Indonesia yang bikin kamu balik ke masa kecil.</p>
+        <div class="hero-cta animate-fade-in delay-2">
+          <a href="#produk" class="btn btn-cta btn-lg">Belanja Sekarang</a>
+          <a href="#produk" class="btn btn-outline btn-lg">Lihat Menu Jadul</a>
+        </div>
+      </div>
+      <div class="hero-scroll">↓</div>
+    </section>
+
+    <!-- Social Proof Bar -->
+    <div class="social-proof-bar">
+      <div class="container">
+        <p>🔥 <strong>1.245</strong> orang sudah membeli minggu ini!</p>
+      </div>
+    </div>
+
+    <!-- Featured Products -->
+    <section id="produk" class="section section-products">
+      <div class="container">
+        <h2 class="section-title reveal">Produk Unggulan</h2>
+        <div class="filter-tabs">
+          <button type="button" class="filter-btn active" data-filter="all">Semua</button>
+          <button type="button" class="filter-btn" data-filter="snack">Snack</button>
+          <button type="button" class="filter-btn" data-filter="kue">Kue</button>
+          <button type="button" class="filter-btn" data-filter="minuman">Minuman</button>
+        </div>
+        <div class="products-grid" id="products-grid">
+          <!-- Products injected by JS or static below -->
+          <article class="product-card reveal" data-category="snack">
+            <span class="badge best-seller">Best Seller</span>
+            <div class="product-image">
+              <img src="dadargulung2.jpg" alt="Dadar Gulung">
+            </div>
+            <div class="product-info">
+              <h3>Dadar Gulung</h3>
+              <div class="product-rating">⭐⭐⭐⭐⭐</div>
+              <p class="product-price">Rp 3.500</p>
+              <div class="product-actions">
+                <button type="button" class="btn btn-sm btn-add-cart" data-id="2" data-name="Coklat Payung" data-price="3500">Tambah ke Keranjang</button>
+                <button type="button" class="btn-icon wishlist-add" data-id="2" aria-label="Tambah wishlist">❤️</button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="snack">
+            <div class="product-image">
+              <img src="sosissolo.jpg" alt="Sosis Solo">
+            </div>
+            <div class="product-info">
+              <h3>Sosis Solo</h3>
+              <div class="product-rating">⭐⭐⭐⭐⭐</div>
+              <p class="product-price">Rp 4.000</p>
+              <div class="product-actions">
+                <button type="button" class="btn btn-sm btn-add-cart" data-id="3" data-name="Gulali Rambut Nenek" data-price="4000">Tambah ke Keranjang</button>
+                <button type="button" class="btn-icon wishlist-add" data-id="3" aria-label="Tambah wishlist">❤️</button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="kue">
+            <span class="badge scarcity">Stok terbatas</span>
+            <div class="product-image">
+              <img src="kueputu.jpg" alt="Kue Putu">
+            </div>
+            <div class="product-info">
+              <h3>Kue Putu</h3>
+              <div class="product-rating">⭐⭐⭐⭐⭐</div>
+              <p class="product-price">Rp 8.000</p>
+              <div class="product-actions">
+                <button type="button" class="btn btn-sm btn-add-cart" data-id="4" data-name="Kue Cubit" data-price="8000">Tambah ke Keranjang</button>
+                <button type="button" class="btn-icon wishlist-add" data-id="4" aria-label="Tambah wishlist">❤️</button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="minuman">
+            <div class="product-image">
+              <img src="badeg.png" alt="Taro Jadul">
+            </div>
+            <div class="product-info">
+              <h3>Es Badeg</h3>
+              <div class="product-rating">⭐⭐⭐⭐⭐</div>
+              <p class="product-price">Rp 6.000</p>
+              <div class="product-actions">
+                <button type="button" class="btn btn-sm btn-add-cart" data-id="5" data-name="Es Badeg" data-price="6000">Tambah ke Keranjang</button>
+                <button type="button" class="btn-icon wishlist-add" data-id="5" aria-label="Tambah wishlist">❤️</button>
+              </div>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="snack">
+            <span class="badge best-seller">Best Seller</span>
+            <div class="product-image">
+              <img src="klepon2.jpg" alt="Klepon">
+            </div>
+            <div class="product-info">
+              <h3>Klepon</h3>
+              <div class="product-rating">⭐⭐⭐⭐⭐</div>
+              <p class="product-price">Rp 5.000</p>
+              <div class="product-actions">
+                <button type="button" class="btn btn-sm btn-add-cart" data-id="6" data-name="Klepon" data-price="5000">Tambah ke Keranjang</button>
+                <button type="button" class="btn-icon wishlist-add" data-id="6" aria-label="Tambah wishlist">❤️</button>
+              </div>
+            </div>
+          </article>
+        </div>
+        <!-- Rekomendasi Produk -->
+        <div class="recommendations reveal">
+          <h3 class="subsection-title">Rekomendasi untuk Kamu</h3>
+          <div class="recommendations-grid" id="recommendations-grid"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kenangan Masa Kecil -->
+    <section id="kenangan" class="section section-story">
+      <div class="container">
+        <div class="story-grid reveal">
+          <div class="story-content">
+            <h2 class="section-title">Ingat Jajanan Ini?</h2>
+            <p>Dulu, sepulang sekolah kita selalu mampir ke warung depan sekolah. Coklat payung, gulali rambut nenek—rasanya seperti kemarin. Sekarang kita dewasa, tapi kenangan itu tetap hangat.</p>
+            <p>Nyemil Jadoel hadir untuk bawa kamu kembali ke masa itu. Setiap gigitan adalah nostalgia. Setiap rasa adalah cerita.</p>
+          </div>
+          <div class="story-illustration">
+            <div class="illustration-box">
+              <span class="illus-emoji">🧒</span>
+              <span class="illus-text">Jajan di warung</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promo & Diskon -->
+    <section id="promo" class="section section-promo">
+      <div class="container">
+        <h2 class="section-title reveal">Promo & Diskon</h2>
+        <div class="promo-banners reveal">
+          <div class="promo-card">
+            <span class="promo-tag">🔥 Diskon</span>
+            <h3>20% untuk Pembelian Pertama</h3>
+            <p>Gunakan kode <strong>JADOEL20</strong></p>
+          </div>
+          <div class="promo-card">
+            <span class="promo-tag">🚚 Gratis Ongkir</span>
+            <h3>Minimal Belanja Rp 50.000</h3>
+            <p>Seluruh Indonesia</p>
+          </div>
+        </div>
+        <div class="countdown-box reveal">
+          <h3>⏰ Flash Sale Berakhir Dalam</h3>
+          <div class="countdown" id="countdown">
+            <div class="countdown-item">
+              <span class="countdown-num" id="hours">02</span>
+              <span class="countdown-label">Jam</span>
+            </div>
+            <div class="countdown-item">
+              <span class="countdown-num" id="minutes">14</span>
+              <span class="countdown-label">Menit</span>
+            </div>
+            <div class="countdown-item">
+              <span class="countdown-num" id="seconds">21</span>
+              <span class="countdown-label">Detik</span>
+            </div>
+          </div>
+          <p class="countdown-note">Promo berakhir dalam hitungan di atas!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimoni -->
+    <section id="testimoni" class="section section-testimoni">
+      <div class="container">
+        <h2 class="section-title reveal">Kata Mereka</h2>
+        <div class="testimoni-grid">
+          <div class="testimoni-card reveal">
+            <div class="testimoni-rating">⭐⭐⭐⭐⭐</div>
+            <p>"Serius ini bikin nostalgia banget 😭 Rasanya persis kayak dulu pas SD!"</p>
+            <div class="testimoni-author">
+              <div class="testimoni-avatar">D</div>
+              <div>
+                <strong>AL.</strong>
+                <span>Jakarta</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimoni-card reveal">
+            <div class="testimoni-rating">⭐⭐⭐⭐⭐</div>
+            <p>"Rasanya sama kayak dulu! Packaging juga rapi, recommended banget."</p>
+            <div class="testimoni-author">
+              <div class="testimoni-avatar">B</div>
+              <div>
+                <strong>Iki.</strong>
+                <span>Bandung</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimoni-card reveal">
+            <div class="testimoni-rating">⭐⭐⭐⭐⭐</div>
+            <p>"Anak-anak suka, saya juga jadi kangen masa kecil. Langganan deh!"</p>
+            <div class="testimoni-author">
+              <div class="testimoni-avatar">R</div>
+              <div>
+                <strong>Razan.</strong>
+                <span>Surabaya</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimoni-card reveal">
+            <div class="testimoni-rating">⭐⭐⭐⭐⭐</div>
+            <p>"Pengiriman cepat, produk original. Will buy again!"</p>
+            <div class="testimoni-author">
+              <div class="testimoni-avatar">A</div>
+              <div>
+                <strong>Mira.</strong>
+                <span>Yogyakarta</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Poin Reward -->
+    <section class="section section-rewards">
+      <div class="container">
+        <div class="rewards-box reveal">
+          <h3>💎 Dapatkan Poin Setiap Belanja!</h3>
+          <p>1x belanja = 10 poin. Kumpulkan 100 poin = diskon Rp 20.000</p>
+          <div class="rewards-visual">
+            <span>🛒</span> → <span>⭐</span> → <span>🎁</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Email Capture -->
+    <section class="section section-newsletter">
+      <div class="container">
+        <div class="newsletter-box reveal">
+          <h2>Dapatkan Promo Rahasia Setiap Minggu!</h2>
+          <p>Daftar sekarang dan dapatkan kode diskon eksklusif di inbox kamu.</p>
+          <form id="newsletter-form" class="newsletter-form" action="subscribe.php" method="post">
+            <input type="email" name="email" placeholder="Alamat email kamu" required aria-label="Email" autocomplete="email">
+            <button type="submit" class="btn btn-cta" id="newsletter-submit">Kirim Sekarang</button>
+          </form>
+          <p id="newsletter-status" class="newsletter-status" role="status" aria-live="polite"></p>
+          <p class="newsletter-note">Kami tidak akan spam. Unsubscribe kapan saja.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Tentang Kami</h4>
+          <p>Nyemil Jadoel menghadirkan jajanan legendaris Indonesia era 90an–2000an. Rasa lama, kenangan tak pernah usang.</p>
+          <p style="margin-top:0.75rem;"><a href="about.html">Baca selengkapnya →</a></p>
+        </div>
+        <div class="footer-col">
+          <h4>Kontak</h4>
+          <p>📧 hello@nyemiljadoel.com</p>
+          <p>📞 0822-2042-0602</p>
+        </div>
+        <div class="footer-col">
+          <h4>Sosial Media</h4>
+          <div class="social-links">
+            <a href="https://www.instagram.com/riza7nw/" aria-label="Instagram">Instagram</a>
+            <a href="https://www.tiktok.com/@riza7nw" aria-label="TikTok">TikTok</a>
+            <a href="https://wa.me/6282220420602" aria-label="WhatsApp">WhatsApp</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Metode Pembayaran</h4>
+          <div class="payment-methods">
+            <span>Transfer Bank</span>
+            <span>E-Wallet</span>
+            <span>COD</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Nyemil Jadoel. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart Sidebar -->
+  <aside id="cart-sidebar" class="sidebar cart-sidebar" aria-hidden="true">
+    <div class="sidebar-header">
+      <h3>🛒 Keranjang Belanja</h3>
+      <button type="button" class="sidebar-close" id="cart-close" aria-label="Tutup keranjang">&times;</button>
+    </div>
+    <div class="sidebar-body">
+      <ul class="cart-items" id="cart-items"></ul>
+      <div class="cart-empty" id="cart-empty">Keranjang masih kosong. Yuk isi!</div>
+      <div class="cart-summary" id="cart-summary" hidden>
+        <p class="cart-total">Total: <strong id="cart-total-text">Rp 0</strong></p>
+        <button type="button" class="btn btn-cta btn-block" id="btn-checkout">Checkout</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Wishlist Sidebar -->
+  <aside id="wishlist-sidebar" class="sidebar wishlist-sidebar" aria-hidden="true">
+    <div class="sidebar-header">
+      <h3>❤️ Wishlist</h3>
+      <button type="button" class="sidebar-close" id="wishlist-close" aria-label="Tutup wishlist">&times;</button>
+    </div>
+    <div class="sidebar-body">
+      <ul class="wishlist-items" id="wishlist-items"></ul>
+      <div class="wishlist-empty" id="wishlist-empty">Belum ada item di wishlist.</div>
+    </div>
+  </aside>
+
+  <!-- Checkout Modal -->
+  <div id="checkout-modal" class="modal-overlay" aria-hidden="true">
+    <div class="modal-content checkout-modal">
+      <button type="button" class="modal-close" id="checkout-close" aria-label="Tutup">&times;</button>
+      <h2>Checkout</h2>
+      <div class="checkout-summary" id="checkout-summary"></div>
+      <form id="checkout-form" class="checkout-form">
+        <label>Nama Lengkap <input type="text" name="name" required></label>
+        <label>No. HP <input type="tel" name="phone" required></label>
+        <label>Alamat <textarea name="address" required></textarea></label>
+        <label>Metode Pembayaran
+          <select name="payment">
+            <option value="transfer">Transfer Bank</option>
+            <option value="ewallet">E-Wallet</option>
+            <option value="cod">COD</option>
+          </select>
+        </label>
+        <button type="submit" class="btn btn-cta btn-block">Bayar Sekarang (Simulasi)</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Loading Overlay (permen berputar) -->
+  <div id="loading-overlay" class="loading-overlay" aria-hidden="true">
+    <div class="loading-spinner">🍬</div>
+    <p>Memuat...</p>
+  </div>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/6282220420602" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat WhatsApp">
+    <span>💬</span> WhatsApp
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
