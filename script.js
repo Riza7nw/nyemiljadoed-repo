@@ -482,6 +482,44 @@
   initScrollReveal();
   renderRecommendations();
   showPopupIfFirstVisit();
+  // ---------- Multi Language ----------
+const translations = {
+  id: {
+    heroTitle: "Rasa Lama, Kenangan Tak Pernah Usang 🍪",
+    heroSubtitle: "Jajanan legendaris Indonesia yang bikin kamu balik ke masa kecil.",
+    shopNow: "Belanja Sekarang",
+    seeMenu: "Lihat Menu Jadul"
+  },
+
+  en: {
+    heroTitle: "Old Taste, Timeless Memories 🍪",
+    heroSubtitle: "Legendary Indonesian snacks that bring back childhood memories.",
+    shopNow: "Shop Now",
+    seeMenu: "See Nostalgic Menu"
+  }
+};
+
+const languageSelect = document.getElementById('language-select');
+
+function changeLanguage(lang) {
+  document.querySelectorAll('[data-translate]').forEach(el => {
+    const key = el.getAttribute('data-translate');
+    el.textContent = translations[lang][key];
+  });
+
+  localStorage.setItem('nyemiljadoel_language', lang);
+}
+
+if (languageSelect) {
+  const savedLang = localStorage.getItem('nyemiljadoel_language') || 'id';
+
+  languageSelect.value = savedLang;
+  changeLanguage(savedLang);
+
+  languageSelect.addEventListener('change', function () {
+    changeLanguage(this.value);
+  });
+}
   // Set initial wishlist heart state on product cards
   document.querySelectorAll('.wishlist-add').forEach(btn => {
     btn.classList.toggle('active', isInWishlist(Number(btn.dataset.id)));

@@ -1534,3 +1534,13 @@ a:hover {
     flex-shrink: 0;
   }
 }
+
+.language-select{
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: none;
+  background: var(--color-krem);
+  color: var(--color-text);
+  font-weight: 600;
+  cursor: pointer;
+}
